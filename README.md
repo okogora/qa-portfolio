@@ -274,7 +274,7 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 **Шаги воспроизведения:**
 
-1. В Postman создать и отправить GET-запрос на URI: https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc99912.
+1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc99912].
 2. Посмотреть ответ - список событий для схемы с id=sc99912 (Сан-Франциско).
 
 Ожидаемый результат:
