@@ -178,6 +178,8 @@
 <details>
 <summary>Требования к API Метро</summary>
 
+***
+
 Метро использует API "metrokit-service". Это API для библиотеки MetroKit.
 
 Функциональность metrokit-service включает:
@@ -282,6 +284,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 }
 ```
 
+***
+
 </details>
 
 2. Протестируй API бэкенда Яндекс.Метро:
@@ -295,6 +299,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 
 <summary>Инструкция для тестирования API</summary>
+
+***
 
 - Зайди в postman.
 - Получи список схем из запроса «/list».
@@ -314,6 +320,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 <details>
 <summary>1. Данные схем</summary>
+
+***
 
 | Город  | ID схемы  |
 |:----------|:----------|
@@ -410,6 +418,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 <summary>BUG-10766: <strong>При запросе списка событий /events для схемы с id=sc99912 структура ответа не совпадает с требованиями</strong></summary>
 
+***
+
 **Шаги воспроизведения:**
 
 1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc99912].
@@ -485,6 +495,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <a name="BUG-10769" />
 <details>
 <summary>BUG-10769: <strong>При запросе списка событий /events для схемы с id=sc66937172 структура ответа не совпадает с требованиями</strong></summary>
+
+***
 
 **Шаги воспроизведения:**
 
@@ -562,6 +574,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 <summary>BUG-10770: <strong>При запросе списка событий /events для схемы с id=sc92836217 структура ответа не совпадает с требованиями</strong></summary>
 
+***
+
 **Шаги воспроизведения:**
 
 1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc92836217].
@@ -637,6 +651,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <a name="BUG-10771" />
 <details>
 <summary>BUG-10771: <strong>При запросе списка событий /events для схемы с id=sc29665623 структура ответа не совпадает с требованиями</strong></summary>
+
+***
 
 **Шаги воспроизведения:**
 
@@ -714,6 +730,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 <summary>BUG-10773: <strong>При запросе списка событий /events для схемы с id=sc52507030 структура ответа не совпадает с требованиями</strong></summary>
 
+***
+
 **Шаги воспроизведения:**
 
 1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc52507030].
@@ -790,6 +808,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 <summary>BUG-10775: <strong>При запросе списка событий /events для схемы с id=sc999 структура ответа не совпадает с требованиями</strong></summary>
 
+***
+
 **Шаги воспроизведения:**
 
 1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc999].
@@ -865,6 +885,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <a name="BUG-10776" />
 <details>
 <summary>BUG-10776: <strong>При запросе списка событий /events для схемы с id=sc20559874 структура ответа не совпадает с требованиями</strong></summary>
+
+***
 
 **Шаги воспроизведения:**
 
@@ -996,6 +1018,8 @@ grep ^233.201 /logs/2019/12/*.txt
 <details>
 <summary>База данных о поездках такси в Чикаго</summary>
 
+***
+
 Таблица `neighborhoods` — информация о районах города:
 - `neighborhood_id` — код района;
 - `name` — название района.
@@ -1054,6 +1078,8 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 <details>
 <summary>4. 400.txt</summary>
 
+***
+
 ```bash
 80.57.170.51 - - [30/12/2019:21:35:12 +0000] "DELETE /users HTTP/1.1" 400 3623
 204.235.176.118 - - [30/12/2019:21:35:13 +0000] "POST /users HTTP/1.1" 400 4704
@@ -1109,6 +1135,8 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 
 <details>
 <summary>5. 500.txt</summary>
+
+***
 
 ```bash
 64.250.112.189 - - [30/12/2019:21:35:13 +0000] "PUT /parsers HTTP/1.1" 500 4639
@@ -1210,6 +1238,8 @@ FROM cabs;
 
 <summary>1. Список компаний с числом автомобилей меньше 100.</summary>
 
+***
+
 ```bash
                  company_name                 | cnt 
 ----------------------------------------------+-----
@@ -1310,6 +1340,8 @@ ORDER BY
 <details>
 <summary>1. Таблица с данными за указанный период.</summary>
 
+***
+
 ```bash
          ts          | weather_conditions 
 ---------------------+--------------------
@@ -1380,6 +1412,8 @@ WHERE
 
 <details>
 <summary>1. Таблица с данными за указанный период.</summary>
+
+***
 
 ```bash
                  company_name                 | trips_amount 
