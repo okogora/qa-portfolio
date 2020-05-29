@@ -51,8 +51,7 @@
 1. Проанализируй требования к API бэкенда Яндекс.Метро.
 
 <details>
-
-<summary>Требования  к API Метро</summary>
+<summary>Требования к API Метро</summary>
 
 Метро использует API "metrokit-service". Это API для библиотеки MetroKit.
 
