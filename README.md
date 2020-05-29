@@ -1,16 +1,24 @@
 # <a name="up" />Портфолио
 
-[Проектирование тестов](#test-design)
+[Проектирование тестов](#test-design)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тест-анализ | Тест-дизайн | Чек-лист | Тест-кейс <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Декомпозиция | Mindmap | Блок-схема<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Классы эквивалентности | Таблица принятия решений
 
-[Тестирование веб-приложений](#web-testing)
+[Тестирование веб-приложений](#web-testing)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UI | Формы | DevTools | Charles | Парное тестирование | Баг-репорт
 
-[Тестирование мобильных приложений](#mobile-testing)
+[Тестирование мобильных приложений](#mobile-testing)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Матрица устройств | Эмуляторы | Android Studio
 
-[Тестирование API](#api-testing)
+[Тестирование API](#api-testing)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REST API | JSON | Postman
 
-[Основы баз данных](#data-bases)
+[Основы баз данных](#data-bases)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Консоль | SQL | PostgreSQL
 
-[Основы автоматизации тестирования](#test-automation)
+[Основы автоматизации тестирования](#test-automation)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript | NodeJS | Puppeteer
 
 ## <a name="test-design" />Проектирование тестов
 
@@ -2241,7 +2249,7 @@ ORDER BY
 
 [Наверх](#up)
 
-## <a name="test-automation" />Основы автоматизации тестирования (JavaScript, NodeJS, Puppeteer)
+## <a name="test-automation" />Основы автоматизации тестирования
 
 ### Задание 1
 
