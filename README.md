@@ -564,9 +564,9 @@
 
 **Окружение:**
 
-Xiaomi Redmi 4X
-Android 7.1.2
-Яндекс.Метро 3.6
+- Xiaomi Redmi 4X
+- Android 7.1.2
+- Яндекс.Метро 3.6
 
 **Скринкаст:** [https://yadi.sk/i/_IELHx4FzryPEA]
 
