@@ -1011,10 +1011,8 @@ grep ^233.201 /logs/2019/12/*.txt
 3. Команды, которыми ты кладёшь логи в файлы 400.txt и 500.txt из main.txt.
 4. Тексты файлов 400.txt и 500.txt.
 
-#### Описание базы данных
-
 <details>
-<summary>База данных о поездках такси в Чикаго</summary>
+<summary><strong>База данных о поездках такси в Чикаго</strong></summary>
 
 ***
 
@@ -1044,9 +1042,14 @@ grep ^233.201 /logs/2019/12/*.txt
 
 </details>
 
-#### Схема таблиц
+<details>
+<summary><strong>Схема таблиц</strong></summary>
+
+***
 
 ![Схема таблиц БД](https://code.s3.yandex.net/qa/schemes/project_4_sprint.png)
+
+</details>
 
 В базе данных нет прямой связи между таблицами `trips` и `weather_records`. Связать эти таблицы можно по времени начала поездки (`trips.start_ts`) и моменту погодных наблюдений (`weather_records.ts`).
 
