@@ -148,6 +148,8 @@
 - При дальнейшем движении шапка карточки станции остаётся неподвижной, и в ней меняются названия станций и сервисов. При этом карточка сохраняет минимальное состояние.
 - **Если движение заканчивается на пустой области, карточка станции закрывается.**
 
+***
+
 </details>
 
 2. Напиши чек-лист для тестирования мобильного приложения на часть требований, **выделенных жирным шрифтом**.
@@ -286,6 +288,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 	
 	2.2. по инструкции.
 
+***
+
 <details>
 
 <summary>Инструкция для тестирования API</summary>
@@ -295,6 +299,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 - Составь таблицу в третьей вкладке шаблона, сопоставив каждому городу его id.
 - Дополни чек-лист для запроса «/events». Убедись, что для каждого id возвращается ответ согласно требованиям.
 - Проверь корректность работы запроса «/events».
+
+***
 
 </details>
 
@@ -340,6 +346,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 |Стамбул	    | sc97451070    |
 |Нижний Новгород	    | sc77792237    |
 |Рим	    | sc68078330    |
+
+***
 
 </details>
 
@@ -468,6 +476,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 **Приоритет:** средний
 
+***
+
 </details>
 
 <a name="BUG-10769" />
@@ -541,6 +551,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 **Скриншот:** [https://yadi.sk/i/oDdjegyhnIq8Tg]
 
 **Приоритет:** средний
+
+***
 
 </details>
 
@@ -616,6 +628,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 **Приоритет:** средний
 
+***
+
 </details>
 
 <a name="BUG-10771" />
@@ -689,6 +703,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 **Скриншот:** [https://yadi.sk/i/8es5sVV7KTEquw]
 
 **Приоритет:** средний
+
+***
 
 </details>
 
@@ -764,6 +780,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 **Приоритет:** средний
 
+***
+
 </details>
 
 <a name="BUG-10775" />
@@ -837,6 +855,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 **Скриншот:** [https://yadi.sk/i/CTRfVyRBISXlwA]
 
 **Приоритет:** средний
+
+***
 
 </details>
 
@@ -912,6 +932,8 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 **Приоритет:** средний
 
+***
+
 </details>
 
 [Наверх](#up)
@@ -969,7 +991,8 @@ grep ^233.201 /logs/2019/12/*.txt
 
 #### Описание базы данных
 
-База данных о поездках такси в Чикаго:
+<details>
+<summary>База данных о поездках такси в Чикаго</summary>
 
 Таблица `neighborhoods` — информация о районах города:
 - `neighborhood_id` — код района;
@@ -992,6 +1015,10 @@ grep ^233.201 /logs/2019/12/*.txt
 - `ts` — дата и время наблюдения (время округлено до часа);
 - `temperature` — температура на момент наблюдения;
 - `description` — краткое описание погодных условий. Например, 'light rain' или 'scattered clouds'.
+
+***
+
+</details>
 
 #### Схема таблиц
 
@@ -1074,6 +1101,8 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 234.218.148.4 - - [31/12/2019:21:39:54 +0000] "PUT /users HTTP/1.1" 400 2509
 ```
 
+***
+
 </details>
 
 <details>
@@ -1130,6 +1159,8 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 178.22.133.42 - - [31/12/2019:21:39:43 +0000] "PUT /alerts HTTP/1.1" 500 4648
 102.247.13.50 - - [31/12/2019:21:39:55 +0000] "PATCH /auth HTTP/1.1" 500 3736
 ```
+
+***
 
 </details>
 
@@ -1233,6 +1264,8 @@ FROM cabs;
  3011 - 66308 JBL Cab Inc.                    |   1
 ```
 
+***
+
 </details>
 
 2. Запрос:
@@ -1304,6 +1337,8 @@ ORDER BY
  2017-11-05 23:00:00 | Good
  2017-11-06 00:00:00 | Good
 ```
+
+***
 
 </details>
 
@@ -1412,6 +1447,8 @@ WHERE
  2241 - 44667 - Felman Corp, Manuel Alonso    |            3
  3556 - 36214 RC Andrews Cab                  |            2
 ```
+
+***
 
 </details>
 
