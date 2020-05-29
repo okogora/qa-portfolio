@@ -336,7 +336,8 @@ GET на URI: https://metrokit-service.maps.yandex.net/v1/events
 - Postman 7.22.1
 - API metrokit-service
 
-**Скриншот:** https://yadi.sk/i/Q39JhIx4tKU-YQ
+**Скриншот:**
+![sc99912](https://yadi.sk/i/Q39JhIx4tKU-YQ)
 
 </details>
 
