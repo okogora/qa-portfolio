@@ -3,10 +3,11 @@
 [Проектирование тестов](#test-design)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тест-анализ | Тест-дизайн | Чек-лист | Тест-кейс <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Декомпозиция | Mindmap | Блок-схема<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Классы эквивалентности | Таблица принятия решений
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Классы эквивалентности | Тестовые значения
 
 [Тестирование веб-приложений](#web-testing)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UI | Формы | DevTools | Charles | Парное тестирование | Баг-репорт
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Пользовательский интерфейс | Формы | DevTools | Charles<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Таблица принятия решений | Парное тестирование | Баг-репорт
 
 [Тестирование мобильных приложений](#mobile-testing)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Матрица устройств | Эмуляторы | Android Studio
@@ -274,7 +275,7 @@
 
 *IE для macOS не поддерживается с 2005 года
 
-По заданию нужно протестировать все комбинации ОС, браузеров и разрешений экрана. Уменьшаем количество окружений, применяя попарное тестирование с помощью сервиса [https://pairwise.yuuniworks.com](https://pairwise.yuuniworks.com).
+По заданию нужно протестировать все комбинации ОС, браузеров и разрешений экрана. Уменьшаем количество окружений, применяя парное тестирование с помощью сервиса [https://pairwise.yuuniworks.com](https://pairwise.yuuniworks.com).
 
 Входные данные:
 
