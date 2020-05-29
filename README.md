@@ -347,7 +347,73 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 <summary>BUG-10769</summary>
 
-</details>
+**При запросе списка событий /events для схемы с id=sc66937172 структура ответа не совпадает с требованиями**
+
+**Шаги воспроизведения:**
+
+1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc66937172].
+2. Посмотреть ответ - список событий для схемы с id=sc66937172 (Бухарест).
+
+Ожидаемый результат:
+1. Статус ответа: 200 OK.
+2. Ответ возвращается в формате JSON, структура ответа для id=sc66937172 совпадает со структурой в требованиях.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": [
+            {
+                "id": "ev-76c50f2d-9c3d-4835-ac73-a0544b1b308e",
+                "schedule": {
+                    "to": "2019-10-25T23:10:00+03:00",
+                    "from": "2019-03-30T01:00:00+03:00",
+                    "type": "Interval"
+                },
+                "title": {
+                    "en": "No trains to Kakhovskaya station",
+                    "ru": "Поезда не ходят до «Каховской»"
+                },
+                "description": {
+                    "en": "Station closure",
+                    "ru": "Закрытие станции"
+                },
+                "changeIds": [
+                    "ch-feed3c7d-d35e-4481-87a4-7c141e1c96c0"
+                ]
+            }
+  } 
+```
+
+3. Если события отсутствуют, список может быть пустым, но должен возвращаться в формате JSON.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": []
+    },
+    "changes": {
+        "type": "IndexedCollection",
+        "items": []
+    }
+}
+```
+
+Фактический результат:
+1. Статус ответа: 404 Not Found.
+2. Структура ответа не совпадает с требованиями: Body ответа пустое.
+3. Ответ возвращается в формате Text.
+
+**Окружение:**
+
+- macOs 10.15.2
+- Postman 7.22.1
+- API metrokit-service
+
+**Скриншот:** [https://yadi.sk/i/oDdjegyhnIq8Tg]
 
 </details>
 
@@ -355,7 +421,73 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 <summary>BUG-10770</summary>
 
-</details>
+**При запросе списка событий /events для схемы с id=sc92836217 структура ответа не совпадает с требованиями**
+
+**Шаги воспроизведения:**
+
+1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc92836217].
+2. Посмотреть ответ - список событий для схемы с id=sc92836217 (Афины).
+
+Ожидаемый результат:
+1. Статус ответа: 200 OK.
+2. Ответ возвращается в формате JSON, структура ответа для id=sc92836217 совпадает со структурой в требованиях.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": [
+            {
+                "id": "ev-76c50f2d-9c3d-4835-ac73-a0544b1b308e",
+                "schedule": {
+                    "to": "2019-10-25T23:10:00+03:00",
+                    "from": "2019-03-30T01:00:00+03:00",
+                    "type": "Interval"
+                },
+                "title": {
+                    "en": "No trains to Kakhovskaya station",
+                    "ru": "Поезда не ходят до «Каховской»"
+                },
+                "description": {
+                    "en": "Station closure",
+                    "ru": "Закрытие станции"
+                },
+                "changeIds": [
+                    "ch-feed3c7d-d35e-4481-87a4-7c141e1c96c0"
+                ]
+            }
+  } 
+```
+
+3. Если события отсутствуют, список может быть пустым, но должен возвращаться в формате JSON.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": []
+    },
+    "changes": {
+        "type": "IndexedCollection",
+        "items": []
+    }
+}
+```
+
+Фактический результат:
+1. Статус ответа: 404 Not Found.
+2. Структура ответа не совпадает с требованиями: Body ответа пустое.
+3. Ответ возвращается в формате Text.
+
+**Окружение:**
+
+- macOs 10.15.2
+- Postman 7.22.1
+- API metrokit-service
+
+**Скриншот:** [https://yadi.sk/i/NgCePxnySF7-fg]
 
 </details>
 
@@ -363,7 +495,73 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 <summary>BUG-10771</summary>
 
-</details>
+**При запросе списка событий /events для схемы с id=sc29665623 структура ответа не совпадает с требованиями**
+
+**Шаги воспроизведения:**
+
+1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc29665623].
+2. Посмотреть ответ - список событий для схемы с id=sc29665623 (София).
+
+Ожидаемый результат:
+1. Статус ответа: 200 OK.
+2. Ответ возвращается в формате JSON, структура ответа для id=sc29665623 совпадает со структурой в требованиях.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": [
+            {
+                "id": "ev-76c50f2d-9c3d-4835-ac73-a0544b1b308e",
+                "schedule": {
+                    "to": "2019-10-25T23:10:00+03:00",
+                    "from": "2019-03-30T01:00:00+03:00",
+                    "type": "Interval"
+                },
+                "title": {
+                    "en": "No trains to Kakhovskaya station",
+                    "ru": "Поезда не ходят до «Каховской»"
+                },
+                "description": {
+                    "en": "Station closure",
+                    "ru": "Закрытие станции"
+                },
+                "changeIds": [
+                    "ch-feed3c7d-d35e-4481-87a4-7c141e1c96c0"
+                ]
+            }
+  } 
+```
+
+3. Если события отсутствуют, список может быть пустым, но должен возвращаться в формате JSON.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": []
+    },
+    "changes": {
+        "type": "IndexedCollection",
+        "items": []
+    }
+}
+```
+
+Фактический результат:
+1. Статус ответа: 404 Not Found.
+2. Структура ответа не совпадает с требованиями: Body ответа пустое.
+3. Ответ возвращается в формате Text.
+
+**Окружение:**
+
+- macOs 10.15.2
+- Postman 7.22.1
+- API metrokit-service
+
+**Скриншот:** [https://yadi.sk/i/8es5sVV7KTEquw]
 
 </details>
 
@@ -371,7 +569,73 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 <summary>BUG-10773</summary>
 
-</details>
+**При запросе списка событий /events для схемы с id=sc52507030 структура ответа не совпадает с требованиями**
+
+**Шаги воспроизведения:**
+
+1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc52507030].
+2. Посмотреть ответ - список событий для схемы с id=sc52507030 (Вена).
+
+Ожидаемый результат:
+1. Статус ответа: 200 OK.
+2. Ответ возвращается в формате JSON, структура ответа для id=sc52507030 совпадает со структурой в требованиях.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": [
+            {
+                "id": "ev-76c50f2d-9c3d-4835-ac73-a0544b1b308e",
+                "schedule": {
+                    "to": "2019-10-25T23:10:00+03:00",
+                    "from": "2019-03-30T01:00:00+03:00",
+                    "type": "Interval"
+                },
+                "title": {
+                    "en": "No trains to Kakhovskaya station",
+                    "ru": "Поезда не ходят до «Каховской»"
+                },
+                "description": {
+                    "en": "Station closure",
+                    "ru": "Закрытие станции"
+                },
+                "changeIds": [
+                    "ch-feed3c7d-d35e-4481-87a4-7c141e1c96c0"
+                ]
+            }
+  } 
+```
+
+3. Если события отсутствуют, список может быть пустым, но должен возвращаться в формате JSON.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": []
+    },
+    "changes": {
+        "type": "IndexedCollection",
+        "items": []
+    }
+}
+```
+
+Фактический результат:
+1. Статус ответа: 404 Not Found.
+2. Структура ответа не совпадает с требованиями: Body ответа пустое.
+3. Ответ возвращается в формате Text.
+
+**Окружение:**
+
+- macOs 10.15.2
+- Postman 7.22.1
+- API metrokit-service
+
+**Скриншот:** [https://yadi.sk/i/qm7fZ7gRUBH_1A]
 
 </details>
 
@@ -379,13 +643,147 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 <details>
 <summary>BUG-10775</summary>
 
-</details>
+**При запросе списка событий /events для схемы с id=sc999 структура ответа не совпадает с требованиями**
+
+**Шаги воспроизведения:**
+
+1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc999].
+2. Посмотреть ответ - список событий для схемы с id=sc999 (Милан).
+
+Ожидаемый результат:
+1. Статус ответа: 200 OK.
+2. Ответ возвращается в формате JSON, структура ответа для id=sc999 совпадает со структурой в требованиях.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": [
+            {
+                "id": "ev-76c50f2d-9c3d-4835-ac73-a0544b1b308e",
+                "schedule": {
+                    "to": "2019-10-25T23:10:00+03:00",
+                    "from": "2019-03-30T01:00:00+03:00",
+                    "type": "Interval"
+                },
+                "title": {
+                    "en": "No trains to Kakhovskaya station",
+                    "ru": "Поезда не ходят до «Каховской»"
+                },
+                "description": {
+                    "en": "Station closure",
+                    "ru": "Закрытие станции"
+                },
+                "changeIds": [
+                    "ch-feed3c7d-d35e-4481-87a4-7c141e1c96c0"
+                ]
+            }
+  } 
+```
+
+3. Если события отсутствуют, список может быть пустым, но должен возвращаться в формате JSON.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": []
+    },
+    "changes": {
+        "type": "IndexedCollection",
+        "items": []
+    }
+}
+```
+
+Фактический результат:
+1. Статус ответа: 404 Not Found.
+2. Структура ответа не совпадает с требованиями: Body ответа пустое.
+3. Ответ возвращается в формате Text.
+
+**Окружение:**
+
+- macOs 10.15.2
+- Postman 7.22.1
+- API metrokit-service
+
+**Скриншот:** [https://yadi.sk/i/CTRfVyRBISXlwA]
 
 </details>
 
 <a name="BUG-10776" />
 <details>
 <summary>BUG-10776</summary>
+
+**При запросе списка событий /events для схемы с id=sc20559874 структура ответа не совпадает с требованиями**
+
+**Шаги воспроизведения:**
+
+1. В Postman создать и отправить GET-запрос на URI: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc20559874].
+2. Посмотреть ответ - список событий для схемы с id=sc20559874 (Прага).
+
+Ожидаемый результат:
+1. Статус ответа: 200 OK.
+2. Ответ возвращается в формате JSON, структура ответа для id=sc20559874 совпадает со структурой в требованиях.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": [
+            {
+                "id": "ev-76c50f2d-9c3d-4835-ac73-a0544b1b308e",
+                "schedule": {
+                    "to": "2019-10-25T23:10:00+03:00",
+                    "from": "2019-03-30T01:00:00+03:00",
+                    "type": "Interval"
+                },
+                "title": {
+                    "en": "No trains to Kakhovskaya station",
+                    "ru": "Поезда не ходят до «Каховской»"
+                },
+                "description": {
+                    "en": "Station closure",
+                    "ru": "Закрытие станции"
+                },
+                "changeIds": [
+                    "ch-feed3c7d-d35e-4481-87a4-7c141e1c96c0"
+                ]
+            }
+  } 
+```
+
+3. Если события отсутствуют, список может быть пустым, но должен возвращаться в формате JSON.
+Пример структуры ответа:
+
+```
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": []
+    },
+    "changes": {
+        "type": "IndexedCollection",
+        "items": []
+    }
+}
+```
+
+Фактический результат:
+1. Статус ответа: 404 Not Found.
+2. Структура ответа не совпадает с требованиями: Body ответа пустое.
+3. Ответ возвращается в формате Text.
+
+**Окружение:**
+
+- macOs 10.15.2
+- Postman 7.22.1
+- API metrokit-service
+
+**Скриншот:** [https://yadi.sk/i/_IBj6x2VK8hDTw]
 
 </details>
 
