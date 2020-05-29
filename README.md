@@ -183,7 +183,9 @@ GET на URI: https://metrokit-service.maps.yandex.net/v1/events
 
 ### Решение
 
-1. Данные схем
+<details>
+
+<summary>1. Данные схем</summary>
 
 | Город  | ID схемы  |
 |:----------|:----------|
@@ -218,6 +220,8 @@ GET на URI: https://metrokit-service.maps.yandex.net/v1/events
 |Стамбул	    | sc97451070    |
 |Нижний Новгород	    | sc77792237    |
 |Рим	    | sc68078330    |
+
+</details>
 
 [Наверх](#up)
 
