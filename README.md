@@ -50,114 +50,113 @@
 
 1. Проанализируй требования к API бэкенда Яндекс.Метро.
 
-    <details>
-        <summary>Требования к API Метро</summary>
+<details><summary>Требования к API Метро</summary>
 
-    Метро использует API "metrokit-service". Это API для библиотеки MetroKit.
+Метро использует API "metrokit-service". Это API для библиотеки MetroKit.
 
-    Функциональность metrokit-service включает:
+Функциональность metrokit-service включает:
 
-    - Доступ к полному списку схем — GET /v1/list/
-    - Доступ к cписку актуальных событий для выбранной схемы -- GET /v1/events/
+- Доступ к полному списку схем — GET /v1/list/
+- Доступ к cписку актуальных событий для выбранной схемы — GET /v1/events/
 
-    **GET /v1/list/**
+**GET /v1/list/**
 
-    GET на URI: https://metrokit-service.maps.yandex.net/v1/list
+GET на URI: https://metrokit-service.maps.yandex.net/v1/list
 
-    Ответ — полный список схем по всем городам. Ответ всегда в формате JSON.
+Ответ — полный список схем по всем городам. Ответ всегда в формате JSON.
 
-    Пример структуры ответа Москвы.
+Пример структуры ответа Москвы.
 
-    ```bash
-            {
-                "id": "sc34974011",
-                "name": {
-                    "en": "Moscow",
-                    "ru": "Москва",
-                    "tr": "Moskova",
-                    "uk": "Москва"
+```bash
+        {
+            "id": "sc34974011",
+            "name": {
+                "en": "Moscow",
+                "ru": "Москва",
+                "tr": "Moskova",
+                "uk": "Москва"
+            },
+            "size": {
+                "packed": 369292,
+                "unpacked": 3001856
+            },
+            "tags": [
+                "published"
+            ],
+            "aliases": [
+                "moscow"
+            ],
+            "logoUrl": "https://avatars.mds.yandex.net/get-bunker/128809/6f088274a46aee3df308423d222eb36906825cb7/orig",
+            "version": "2e5e649",
+            "geoRegion": {
+                "delta": {
+                    "lat": 0.32158,
+                    "lon": 0.439453
                 },
-                "size": {
-                    "packed": 369292,
-                    "unpacked": 3001856
-                },
-                "tags": [
-                    "published"
-                ],
-                "aliases": [
-                    "moscow"
-                ],
-                "logoUrl": "https://avatars.mds.yandex.net/get-bunker/128809/6f088274a46aee3df308423d222eb36906825cb7/orig",
-                "version": "2e5e649",
-                "geoRegion": {
-                    "delta": {
-                        "lat": 0.32158,
-                        "lon": 0.439453
-                    },
-                    "center": {
-                        "lat": 55.743347,
-                        "lon": 37.617188
-                    }
-                },
-                "countryCode": "RU",
-                "defaultAlias": "moscow"
-            }
-    ```
-
-    **GET /v1/events/**
-
-    GET на URI: https://metrokit-service.maps.yandex.net/v1/events
-
-    Параметр: scheme_id=\<id>
-
-    Пример: https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc34974011
-
-    Ответ — список событий для выбранной схемы . Ответ всегда в формате JSON.
-
-    Если событие присутствует, ответ имеет такую структуру. Например, для Москвы с id = sc34974011:
-
-    ```bash
-        "events": {
-            "type": "IndexedCollection",
-            "items": [
-                {
-                    "id": "ev-76c50f2d-9c3d-4835-ac73-a0544b1b308e",
-                    "schedule": {
-                        "to": "2019-10-25T23:10:00+03:00",
-                        "from": "2019-03-30T01:00:00+03:00",
-                        "type": "Interval"
-                    },
-                    "title": {
-                        "en": "No trains to Kakhovskaya station",
-                        "ru": "Поезда не ходят до «Каховской»"
-                    },
-                    "description": {
-                        "en": "Station closure",
-                        "ru": "Закрытие станции"
-                    },
-                    "changeIds": [
-                        "ch-feed3c7d-d35e-4481-87a4-7c141e1c96c0"
-                    ]
+                "center": {
+                    "lat": 55.743347,
+                    "lon": 37.617188
                 }
-      }
-    ```
-
-    Если события отсутствуют, список может быть пустым, но должен возвращаться в формате JSON. Например, для Хельсинки с id = sc38955480:
-
-    ```bash
-    {
-        "events": {
-            "type": "IndexedCollection",
-            "items": []
-        },
-        "changes": {
-            "type": "IndexedCollection",
-            "items": []
+            },
+            "countryCode": "RU",
+            "defaultAlias": "moscow"
         }
-    }
-    ```
+```
 
-    </details>
+**GET /v1/events/**
+
+GET на URI: https://metrokit-service.maps.yandex.net/v1/events
+
+Параметр: scheme_id=\<id>
+
+Пример: https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc34974011
+
+Ответ — список событий для выбранной схемы. Ответ всегда в формате JSON.
+
+Если событие присутствует, ответ имеет такую структуру. Например, для Москвы с id = sc34974011:
+
+```bash
+    "events": {
+        "type": "IndexedCollection",
+        "items": [
+            {
+                "id": "ev-76c50f2d-9c3d-4835-ac73-a0544b1b308e",
+                "schedule": {
+                    "to": "2019-10-25T23:10:00+03:00",
+                    "from": "2019-03-30T01:00:00+03:00",
+                    "type": "Interval"
+                },
+                "title": {
+                    "en": "No trains to Kakhovskaya station",
+                    "ru": "Поезда не ходят до «Каховской»"
+                },
+                "description": {
+                    "en": "Station closure",
+                    "ru": "Закрытие станции"
+                },
+                "changeIds": [
+                    "ch-feed3c7d-d35e-4481-87a4-7c141e1c96c0"
+                ]
+            }
+  }
+```
+
+Если события отсутствуют, список может быть пустым, но должен возвращаться в формате JSON. Например, для Хельсинки с id = sc38955480:
+
+```bash
+{
+    "events": {
+        "type": "IndexedCollection",
+        "items": []
+    },
+    "changes": {
+        "type": "IndexedCollection",
+        "items": []
+    }
+}
+```
+
+</details>
 
 2. Протестируй API бэкенда Яндекс.Метро:
 
