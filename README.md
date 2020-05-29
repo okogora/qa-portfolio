@@ -294,8 +294,6 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 	
 	2.2. по инструкции.
 
-***
-
 <details>
 
 <summary>Инструкция для тестирования API</summary>
