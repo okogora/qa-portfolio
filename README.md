@@ -1049,6 +1049,8 @@ grep ^233.201 /logs/2019/12/*.txt
 
 ![Схема таблиц БД](https://code.s3.yandex.net/qa/schemes/project_4_sprint.png)
 
+***
+
 </details>
 
 В базе данных нет прямой связи между таблицами `trips` и `weather_records`. Связать эти таблицы можно по времени начала поездки (`trips.start_ts`) и моменту погодных наблюдений (`weather_records.ts`).
