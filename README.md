@@ -106,11 +106,11 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/list]
 
 **GET /v1/events/**
 
-GET на URI: https://metrokit-service.maps.yandex.net/v1/events
+GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
-Параметр: scheme_id=\<id>
+Параметр: [scheme_id=\<id>]
 
-Пример: https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc34974011
+Пример: [https://metrokit-service.maps.yandex.net/v1/events?scheme_id=sc34974011]
 
 Ответ — список событий для выбранной схемы. Ответ всегда в формате JSON.
 
@@ -336,8 +336,7 @@ GET на URI: https://metrokit-service.maps.yandex.net/v1/events
 - Postman 7.22.1
 - API metrokit-service
 
-**Скриншот:**
-![sc99912](https://yadi.sk/i/Q39JhIx4tKU-YQ)
+**Скриншот:** https://yadi.sk/i/Q39JhIx4tKU-YQ
 
 </details>
 
