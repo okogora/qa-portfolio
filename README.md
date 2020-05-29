@@ -564,7 +564,7 @@ ORDER BY
 
 ## <a name="test-automation" />Основы автоматизации тестирования (JavaScript, NodeJS, Puppeteer)
 
-#### Задание 1
+### Задание 1
 
 Автоматизируй тест-кейс для Яндекс.Маршрутов. Найди нужные селекторы на стенде: <https://qa-routes.praktikum-services.ru/>
 
@@ -580,9 +580,8 @@ ORDER BY
 
 ОР: Текст появившегося результата начинается со слова «Такси».
 ```
-***
 
-#### Решение
+### Решение
 
 Селекторы:
 
@@ -598,7 +597,7 @@ ORDER BY
 
 Автотест:
 
-```js
+```javascript
 const puppeteer = require('puppeteer');
 
 const URL_TEST = 'https://qa-routes.praktikum-services.ru/';
@@ -656,12 +655,11 @@ async function testTaxiResult() {
 testTaxiResult();
 ```
 
-***
+[Наверх](#up)
 
-#### Задание 2
+### Задание 2
 
 Автоматизируй тест-кейс для [ya.ru](ya.ru), применив нужные селекторы.
-
 
 ```
 [CASE-2] Проверка появления результатов поиска
@@ -676,9 +674,7 @@ testTaxiResult();
 ОР: Выполнен переход на страницу выдачи поиска и результат поиска непустой.
 ```
 
-***
-
-#### Решение
+### Решение
 
 Селекторы:
 
@@ -690,7 +686,7 @@ testTaxiResult();
 
 Автотест:
 
-```js
+```javascript
 const puppeteer = require('puppeteer');
 
 async function testYaRu() {
@@ -732,3 +728,4 @@ testYaRu();
 ```
 
 [Наверх](#up)
+
