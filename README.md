@@ -59,7 +59,7 @@
 
 2. Логи:
 
-```sh
+```bash
 233.201.188.154 - - [18/12/2019:21:46:01 +0000] "DELETE /events HTTP/1.1" 403 3971
 233.201.182.9 - - [21/12/2019:21:56:20 +0000] "PATCH /users HTTP/1.1" 400 4118
 ```
@@ -120,28 +120,28 @@
 
 1. Команды, которые создают директории bug1 и events.
 
-```sh
+```bash
 mkdir bug1
 mkdir events
 ```
 
 2. Команда, которой выбираешь запросы за указанный период. Это те запросы, которыми ты отбираешь логи в файл main.txt.
 
-```sh
+```bash
 grep "21:3" ~/logs/2019/12/apache_2019-12-30.txt > ~/bug1/main.txt
 grep "21:3" ~/logs/2019/12/apache_2019-12-31.txt >> ~/bug1/main.txt
 ```
 
 3. Команды, которыми ты кладёшь логи в файлы 400.txt и 500.txt из main.txt.
 
-```sh
+```bash
 grep -w "400" ~/bug1/main.txt > ~/bug1/events/400.txt
 grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 ```
 
 4. 400.txt
 
-```sh
+```bash
 80.57.170.51 - - [30/12/2019:21:35:12 +0000] "DELETE /users HTTP/1.1" 400 3623
 204.235.176.118 - - [30/12/2019:21:35:13 +0000] "POST /users HTTP/1.1" 400 4704
 82.95.203.67 - - [30/12/2019:21:35:19 +0000] "DELETE /lists HTTP/1.1" 400 3737
@@ -192,7 +192,7 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 
 5. 500.txt.
 
-```sh
+```bash
 64.250.112.189 - - [30/12/2019:21:35:13 +0000] "PUT /parsers HTTP/1.1" 500 4639
 193.253.101.180 - - [30/12/2019:21:35:31 +0000] "PATCH /alerts HTTP/1.1" 500 2944
 197.106.117.194 - - [30/12/2019:21:35:31 +0000] "PATCH /parsers HTTP/1.1" 500 3519
@@ -263,7 +263,7 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 1. Число автомобилей: 5529.
 2. Запрос:
 
-```sh
+```bash
 SELECT
   COUNT(*) AS cnt
 FROM cabs;
@@ -306,7 +306,7 @@ FROM cabs;
 
 Автотест:
 
-```sh
+```js
 const puppeteer = require('puppeteer');
 
 const URL_TEST = 'https://qa-routes.praktikum-services.ru/';
@@ -398,7 +398,7 @@ testTaxiResult();
 
 Автотест:
 
-```sh
+```js
 const puppeteer = require('puppeteer');
 
 async function testYaRu() {
