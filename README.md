@@ -1,13 +1,10 @@
 # <a name="up" />Портфолио
 
 [Проектирование тестов](#test-design)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тест-анализ | Тест-дизайн | Чек-лист | Тест-кейс <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Декомпозиция | Mindmap | Блок-схема<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Классы эквивалентности | Тестовые значения
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тест-анализ | Тест-дизайн | Чек-лист | Тест-кейс | Декомпозиция | Mindmap | Блок-схема | Классы эквивалентности | Тестовые значения
 
 [Тестирование веб-приложений](#web-testing)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Пользовательский интерфейс | Формы | DevTools | Charles<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Таблица принятия решений | Парное тестирование | Баг-репорт
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Пользовательский интерфейс | Формы | DevTools | Charles | Таблица принятия решений | Парное тестирование | Баг-репорт
 
 [Тестирование мобильных приложений](#mobile-testing)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Матрица устройств | Эмуляторы | Android Studio
