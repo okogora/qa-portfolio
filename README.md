@@ -398,9 +398,7 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 <a name="BUG-10766" />
 <details>
-<summary>BUG-10766</summary>
-
-**При запросе списка событий /events для схемы с id=sc99912 структура ответа не совпадает с требованиями**
+<summary>BUG-10766: <strong>При запросе списка событий /events для схемы с id=sc99912 структура ответа не совпадает с требованиями</strong></summary>
 
 **Шаги воспроизведения:**
 
@@ -474,9 +472,7 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 <a name="BUG-10769" />
 <details>
-<summary>BUG-10769</summary>
-
-**При запросе списка событий /events для схемы с id=sc66937172 структура ответа не совпадает с требованиями**
+<summary>BUG-10769: <strong>При запросе списка событий /events для схемы с id=sc66937172 структура ответа не совпадает с требованиями</strong></summary>
 
 **Шаги воспроизведения:**
 
@@ -550,9 +546,7 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 <a name="BUG-10770" />
 <details>
-<summary>BUG-10770</summary>
-
-**При запросе списка событий /events для схемы с id=sc92836217 структура ответа не совпадает с требованиями**
+<summary>BUG-10770: <strong>При запросе списка событий /events для схемы с id=sc92836217 структура ответа не совпадает с требованиями</strong></summary>
 
 **Шаги воспроизведения:**
 
@@ -626,9 +620,7 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 <a name="BUG-10771" />
 <details>
-<summary>BUG-10771</summary>
-
-**При запросе списка событий /events для схемы с id=sc29665623 структура ответа не совпадает с требованиями**
+<summary>BUG-10771: <strong>При запросе списка событий /events для схемы с id=sc29665623 структура ответа не совпадает с требованиями</strong></summary>
 
 **Шаги воспроизведения:**
 
@@ -702,9 +694,7 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 <a name="BUG-10773" />
 <details>
-<summary>BUG-10773</summary>
-
-**При запросе списка событий /events для схемы с id=sc52507030 структура ответа не совпадает с требованиями**
+<summary>BUG-10773: <strong>При запросе списка событий /events для схемы с id=sc52507030 структура ответа не совпадает с требованиями</strong></summary>
 
 **Шаги воспроизведения:**
 
@@ -778,9 +768,7 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 <a name="BUG-10775" />
 <details>
-<summary>BUG-10775</summary>
-
-**При запросе списка событий /events для схемы с id=sc999 структура ответа не совпадает с требованиями**
+<summary>BUG-10775: <strong>При запросе списка событий /events для схемы с id=sc999 структура ответа не совпадает с требованиями</strong></summary>
 
 **Шаги воспроизведения:**
 
@@ -854,9 +842,7 @@ GET на URI: [https://metrokit-service.maps.yandex.net/v1/events]
 
 <a name="BUG-10776" />
 <details>
-<summary>BUG-10776</summary>
-
-**При запросе списка событий /events для схемы с id=sc20559874 структура ответа не совпадает с требованиями**
+<summary>BUG-10776: <strong>При запросе списка событий /events для схемы с id=sc20559874 структура ответа не совпадает с требованиями</strong></summary>
 
 **Шаги воспроизведения:**
 
