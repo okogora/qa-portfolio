@@ -51,6 +51,7 @@
 1. Проанализируй требования к API бэкенда Яндекс.Метро.
 
 <details>
+
 <summary>Требования  к API Метро</summary>
 
 Метро использует API "metrokit-service". Это API для библиотеки MetroKit.
@@ -162,9 +163,11 @@ GET на URI: https://metrokit-service.maps.yandex.net/v1/events
 2. Протестируй API бэкенда Яндекс.Метро:
 
 	2.1. по чек-листу из шаблона;
+	
 	2.2. по инструкции.
 
 <details>
+
 <summary>Инструкция для тестирования API</summary>
 
 - Зайди в postman.
