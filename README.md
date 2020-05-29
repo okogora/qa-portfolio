@@ -14,31 +14,39 @@
 
 ## <a name="test-design" />Проектирование тестов
 
-#### Задание
+### Задание
+
+### Решение
 
 [Наверх](#up)
 
 ## <a name="web-testing" />Тестирование веб-приложений
 
-#### Задание
+### Задание
+
+### Решение
 
 [Наверх](#up)
 
 ## <a name="mobile-testing" />Тестирование мобильных приложений
 
-#### Задание
+### Задание
+
+### Решение
 
 [Наверх](#up)
 
 ## <a name="api-testing" />Тестирование API
 
-#### Задание
+### Задание
+
+### Решение
 
 [Наверх](#up)
 
 ## <a name="data-bases" />Основы баз данных (PostgreSQL)
 
-#### Задание 1
+### Задание 1
 
 От разработчиков поступила задача: нужно выяснить, какие запросы шли на IP-адреса. IP-адрес состоит из четырёх чисел, они разделены точками. Тебе нужны адреса, которые начинаются с "233.201.".
 
@@ -54,11 +62,9 @@
 184.79.247.161 - - [30/12/2019:21:38:13 +0000] "PUT /alerts HTTP/1.1" 400 3557
 ```
 
-***
+### Решение
 
-#### Решение
-
-1. Команда:
+1. Команда получения логов:
 
 ```bash
 grep ^233.201 /logs/2019/12/*.txt
@@ -71,9 +77,9 @@ grep ^233.201 /logs/2019/12/*.txt
 233.201.182.9 - - [21/12/2019:21:56:20 +0000] "PATCH /users HTTP/1.1" 400 4118
 ```
 
-***
+[Наверх](#up)
 
-#### Задание 2
+### Задание 2
 
 В системе обнаружен баг. Он проявлялся 30.12.2019 и 31.12.2019 с 21:30:00 до 21:39:59. При этом появлялись ошибки с номерами 400 и 500. Твоя задача — сохранить в отдельный файл логи, которые были записаны в этот период. Затем эти логи надо разложить по отдельным файлам: логи с одинаковой ошибкой положи в один файл.
 
@@ -121,25 +127,23 @@ grep ^233.201 /logs/2019/12/*.txt
 
 В базе данных нет прямой связи между таблицами `trips` и `weather_records`. Связать эти таблицы можно по времени начала поездки (`trips.start_ts`) и моменту погодных наблюдений (`weather_records.ts`).
 
-***
+### Решение
 
-#### Решение
-
-1. Команды, которые создают директории bug1 и events.
+1. Команды создания директорий bug1 и events:
 
 ```bash
 mkdir bug1
 mkdir events
 ```
 
-2. Команда, которой выбираешь запросы за указанный период. Это те запросы, которыми ты отбираешь логи в файл main.txt.
+2. Команда выбора запросов за указанный период:
 
 ```bash
 grep "21:3" ~/logs/2019/12/apache_2019-12-30.txt > ~/bug1/main.txt
 grep "21:3" ~/logs/2019/12/apache_2019-12-31.txt >> ~/bug1/main.txt
 ```
 
-3. Команды, которыми ты кладёшь логи в файлы 400.txt и 500.txt из main.txt.
+3. Команды сохранения логов в файлы 400.txt и 500.txt из main.txt:
 
 ```bash
 grep -w "400" ~/bug1/main.txt > ~/bug1/events/400.txt
@@ -257,9 +261,9 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 
 </details>
 
-***
+[Наверх](#up)
 
-#### Задание 3
+### Задание 3
 
 У тебя есть база данных с поездками на такси. По плану на линию обслуживания должно было выйти 10550 автомобилей — эта цифра покрывает спрос пользователей. Команде поступило много жалоб — свободных автомобилей оказалось недостаточно. Сколько такси вышло на линии на самом деле? Информация о всех машинах на линии есть в таблице `cabs`.
 1. Зайди на удалённый сервер.
@@ -270,9 +274,7 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 1. Число автомобилей
 2. Запрос, которым тебе удалось решить задачу.
 
-***
-
-#### Решение
+### Решение
 
 1. Число автомобилей: 5529.
 2. Запрос:
@@ -282,6 +284,282 @@ SELECT
   COUNT(*) AS cnt
 FROM cabs;
 ```
+
+[Наверх](#up)
+
+### Задание 4
+
+Посчитай количество автомобилей в каждой компании из таблицы `cabs`. Отсортируй значения по убыванию. Команда предполагает, что некоторые компании не вывели достаточно автомобилей на линию.
+
+Выведи те компании, в которых меньше 100 автомобилей. Поле с числом автомобилей назови `cnt`, поле с названием компании — `company_name`.
+
+Чтобы решить задачу, примени оператор HAVING — аналог WHERE для агрегирующих функций.
+
+В ответе приложи:
+1. Список компаний с числом автомобилей меньше 100.
+2. Запрос, которым тебе удалось решить задачу.
+
+### Решение
+
+<details>
+
+<summary>1. Список компаний с числом автомобилей меньше 100.</summary>
+
+```bash
+                 company_name                 | cnt 
+----------------------------------------------+-----
+ Nova Taxi Affiliation Llc                    |  97
+ Patriot Taxi Dba Peace Taxi Associat         |  89
+ Blue Diamond                                 |  85
+ Checker Taxi Affiliation                     |  81
+ Chicago Medallion Management                 |  80
+ Chicago Independents                         |  69
+ 24 Seven Taxi                                |  67
+ Checker Taxi                                 |  60
+ American United                              |  55
+ Chicago Medallion Leasing INC                |  53
+ Top Cab Affiliation                          |  49
+ KOAM Taxi Association                        |  48
+ Chicago Taxicab                              |  38
+ Norshore Cab                                 |  34
+ Gold Coast Taxi                              |  20
+ Metro Group                                  |  20
+ Service Taxi Association                     |  18
+ 5 Star Taxi                                  |  14
+ American United Taxi Affiliation             |   8
+ Metro Jet Taxi A                             |   8
+ Setare Inc                                   |   7
+ Leonard Cab Co                               |   5
+ 4615 - 83503 Tyrone Henderson                |   1
+ 5062 - 34841 Sam Mestas                      |   1
+ 4623 - 27290 Jay Kim                         |   1
+ 5997 - 65283 AW Services Inc.                |   1
+ 2092 - 61288 Sbeih company                   |   1
+ 1469 - 64126 Omar Jada                       |   1
+ 2733 - 74600 Benny Jona                      |   1
+ 2192 - 73487 Zeymane Corp                    |   1
+ 5006 - 39261 Salifu Bawa                     |   1
+ 3556 - 36214 RC Andrews Cab                  |   1
+ 3721 - Santamaria Express, Alvaro Santamaria |   1
+ 2809 - 95474 C & D Cab Co Inc.               |   1
+ 2241 - 44667 - Felman Corp, Manuel Alonso    |   1
+ 3620 - 52292 David K. Cab Corp.              |   1
+ 2823 - 73307 Lee Express Inc                 |   1
+ 6057 - 24657 Richard Addo                    |   1
+ 6742 - 83735 Tasha ride inc                  |   1
+ 1085 - 72312 N and W Cab Co                  |   1
+ 3591 - 63480 Chuks Cab                       |   1
+ 0118 - 42111 Godfrey S.Awir                  |   1
+ 6574 - Babylon Express Inc.                  |   1
+ 3094 - 24059 G.L.B. Cab Co                   |   1
+ 5874 - 73628 Sergey Cab Corp.                |   1
+ 6743 - 78771 Luhak Corp                      |   1
+ 5074 - 54002 Ahzmi Inc                       |   1
+ 3623 - 72222 Arrington Enterprises           |   1
+ 4053 - 40193 Adwar H. Nikola                 |   1
+ Chicago Star Taxicab                         |   1
+ 3011 - 66308 JBL Cab Inc.                    |   1
+```
+
+</details>
+
+2. Запрос:
+
+```bash
+SELECT
+  company_name,
+  COUNT(cab_id) AS cnt
+FROM
+  cabs
+GROUP BY
+  company_name
+HAVING
+  COUNT(cab_id) < 100
+ORDER BY
+  cnt DESC;
+```
+
+[Наверх](#up)
+
+### Задание 5
+
+В приложении такси рассчитывается коэффициент стоимости поездки. Если погода хорошая, значение коэффициента равно 1. Если на улице дождь или шторм, коэффициент повышается до 2. У команды есть гипотеза, что в расчётах коэффициента ошибка. Чтобы проверить расчёт коэффициента, команде нужна выборка данных: разработчик может сверить коэффицент с данными в логах и исправить баг. Твоя задача — получить выборку.
+
+Чтобы это сделать:
+1. Получи описание погодных условий из таблицы `weather_records` для каждого часа.
+2. Раздели все часы на две группы оператором CASE: 'Bad', если поле `description` содержит слова rain или storm; 'Good' для всех остальных.
+3. Полученное поле назови `weather_conditions`.
+
+В результирующей таблице должно быть два поля — дата и час (`ts`) и `weather_conditions`.
+
+Сделай выборку за период с 2017-11-05 00:00 по 2017-11-06 00:00.
+
+В ответе приложи:
+1. Полученную таблицу с данными за указанный период.
+2. Запрос, которым удалось решить задачу.
+
+### Решение
+
+<details>
+<summary>1. Таблица с данными за указанный период.</summary>
+
+```bash
+         ts          | weather_conditions 
+---------------------+--------------------
+ 2017-11-05 00:00:00 | Good
+ 2017-11-05 01:00:00 | Bad
+ 2017-11-05 02:00:00 | Good
+ 2017-11-05 03:00:00 | Good
+ 2017-11-05 04:00:00 | Bad
+ 2017-11-05 05:00:00 | Bad
+ 2017-11-05 06:00:00 | Good
+ 2017-11-05 07:00:00 | Good
+ 2017-11-05 08:00:00 | Good
+ 2017-11-05 09:00:00 | Good
+ 2017-11-05 10:00:00 | Good
+ 2017-11-05 11:00:00 | Good
+ 2017-11-05 12:00:00 | Good
+ 2017-11-05 13:00:00 | Good
+ 2017-11-05 14:00:00 | Bad
+ 2017-11-05 15:00:00 | Good
+ 2017-11-05 16:00:00 | Bad
+ 2017-11-05 17:00:00 | Good
+ 2017-11-05 18:00:00 | Bad
+ 2017-11-05 19:00:00 | Bad
+ 2017-11-05 20:00:00 | Bad
+ 2017-11-05 21:00:00 | Good
+ 2017-11-05 22:00:00 | Good
+ 2017-11-05 23:00:00 | Good
+ 2017-11-06 00:00:00 | Good
+```
+
+</details>
+
+2. Запрос:
+
+```bash
+SELECT
+  ts,
+  CASE
+    WHEN description LIKE '%rain%' OR description LIKE '%storm%' THEN 'Bad'
+    ELSE 'Good'
+  END AS weather_conditions
+FROM
+  weather_records
+WHERE
+  ts BETWEEN '2017-11-05 00:00:00' AND '2017-11-06 00:00:00';
+```
+
+[Наверх](#up)
+
+### Задание 6
+
+После обновления ПО таксопарки стали сообщать, что прибыль, которую они получают, не сходится с данными, которые отдаёт приложение. Разработка предполагает, что проблема может быть в данных о количестве поездок.
+
+Чтобы определить, есть ли баг, нужно получить выборку с количеством поездок каждого таксопарка за 15 и 16 ноября 2017 года.
+
+1. Выведи поле `company_name`. Поле с числом поездок назови `trips_amount` и выведи его.
+2. Результаты, полученные в поле `trips_amount`, отсортируй по убыванию.
+
+Подсказка: чтобы решить задачу, соедини таблицы `cabs` и `trips`. Примени агрегирующие функции с группировкой. Не забудь написать конструкцию с условием.
+
+В ответе приложи:
+1. Полученную таблицу с данными за указанный период.
+2. Запрос, которым удалось решить задачу.
+
+### Решение
+
+<details>
+<summary>1. Таблица с данными за указанный период.</summary>
+
+```bash
+                 company_name                 | trips_amount 
+----------------------------------------------+--------------
+ Flash Cab                                    |        19558
+ Taxi Affiliation Services                    |        11422
+ Medallion Leasin                             |        10367
+ Yellow Cab                                   |         9888
+ Taxi Affiliation Service Yellow              |         9299
+ Chicago Carriage Cab Corp                    |         9181
+ City Service                                 |         8448
+ Sun Taxi                                     |         7701
+ Star North Management LLC                    |         7455
+ Blue Ribbon Taxi Association Inc.            |         5953
+ Choice Taxi Association                      |         5015
+ Globe Taxi                                   |         4383
+ Dispatch Taxi Affiliation                    |         3355
+ Nova Taxi Affiliation Llc                    |         3175
+ Patriot Taxi Dba Peace Taxi Associat         |         2235
+ Checker Taxi Affiliation                     |         2216
+ Blue Diamond                                 |         2070
+ Chicago Medallion Management                 |         1955
+ 24 Seven Taxi                                |         1775
+ Chicago Medallion Leasing INC                |         1607
+ Checker Taxi                                 |         1486
+ American United                              |         1404
+ Chicago Independents                         |         1296
+ KOAM Taxi Association                        |         1259
+ Chicago Taxicab                              |         1014
+ Top Cab Affiliation                          |          978
+ Gold Coast Taxi                              |          428
+ Service Taxi Association                     |          402
+ 5 Star Taxi                                  |          310
+ 303 Taxi                                     |          250
+ Setare Inc                                   |          230
+ American United Taxi Affiliation             |          210
+ Leonard Cab Co                               |          147
+ Metro Jet Taxi A                             |          146
+ Norshore Cab                                 |          127
+ 6742 - 83735 Tasha ride inc                  |           39
+ 3591 - 63480 Chuks Cab                       |           37
+ 1469 - 64126 Omar Jada                       |           36
+ 6743 - 78771 Luhak Corp                      |           33
+ 0118 - 42111 Godfrey S.Awir                  |           33
+ 6574 - Babylon Express Inc.                  |           31
+ Chicago Star Taxicab                         |           29
+ 1085 - 72312 N and W Cab Co                  |           29
+ 2809 - 95474 C & D Cab Co Inc.               |           29
+ 2092 - 61288 Sbeih company                   |           27
+ 3011 - 66308 JBL Cab Inc.                    |           25
+ 3620 - 52292 David K. Cab Corp.              |           21
+ 4615 - 83503 Tyrone Henderson                |           21
+ 3623 - 72222 Arrington Enterprises           |           20
+ 5074 - 54002 Ahzmi Inc                       |           16
+ 2823 - 73307 Lee Express Inc                 |           15
+ 4623 - 27290 Jay Kim                         |           15
+ 3721 - Santamaria Express, Alvaro Santamaria |           14
+ 5006 - 39261 Salifu Bawa                     |           14
+ 2192 - 73487 Zeymane Corp                    |           14
+ 6057 - 24657 Richard Addo                    |           13
+ 5997 - 65283 AW Services Inc.                |           12
+ Metro Group                                  |           11
+ 5062 - 34841 Sam Mestas                      |            8
+ 4053 - 40193 Adwar H. Nikola                 |            7
+ 2733 - 74600 Benny Jona                      |            7
+ 5874 - 73628 Sergey Cab Corp.                |            5
+ 2241 - 44667 - Felman Corp, Manuel Alonso    |            3
+ 3556 - 36214 RC Andrews Cab                  |            2
+```
+
+</details>
+
+2. Запрос:
+
+```bash
+SELECT
+  cabs.company_name AS company_name,
+  COUNT(trips.trip_id) AS trips_amount
+FROM
+  cabs
+INNER JOIN trips ON trips.cab_id = cabs.cab_id
+WHERE
+  CAST(trips.start_ts AS date) BETWEEN '2017-11-15' AND '2017-11-16'
+GROUP BY
+  company_name
+ORDER BY
+  trips_amount DESC;
+```
+
 [Наверх](#up)
 
 ## <a name="test-automation" />Основы автоматизации тестирования (JavaScript, NodeJS, Puppeteer)
@@ -382,7 +660,7 @@ testTaxiResult();
 
 #### Задание 2
 
-Автоматизируй тест-кейс для [ya.ru](https://ya.ru), применив нужные селекторы.
+Автоматизируй тест-кейс для [ya.ru](ya.ru), применив нужные селекторы.
 
 
 ```
