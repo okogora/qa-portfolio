@@ -146,7 +146,8 @@ grep -w "400" ~/bug1/main.txt > ~/bug1/events/400.txt
 grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 ```
 
-4. 400.txt
+<details>
+<summary>4. 400.txt</summary>
 
 ```bash
 80.57.170.51 - - [30/12/2019:21:35:12 +0000] "DELETE /users HTTP/1.1" 400 3623
@@ -197,7 +198,10 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 234.218.148.4 - - [31/12/2019:21:39:54 +0000] "PUT /users HTTP/1.1" 400 2509
 ```
 
-5. 500.txt.
+</details>
+
+<details>
+<summary>5. 500.txt</summary>
 
 ```bash
 64.250.112.189 - - [30/12/2019:21:35:13 +0000] "PUT /parsers HTTP/1.1" 500 4639
@@ -250,6 +254,9 @@ grep -w "500" ~/bug1/main.txt > ~/bug1/events/500.txt
 178.22.133.42 - - [31/12/2019:21:39:43 +0000] "PUT /alerts HTTP/1.1" 500 4648
 102.247.13.50 - - [31/12/2019:21:39:55 +0000] "PATCH /auth HTTP/1.1" 500 3736
 ```
+
+</details>
+
 ***
 
 #### Задание 3
