@@ -1,4 +1,4 @@
-# <a name="up" />Портфолио
+# <a name="up" />Портфолио тестировщика
 
 [Проектирование тестов](#test-design)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тест-анализ | Ассоциативные карты | Блок-схемы<br>
@@ -3754,4 +3754,6 @@ testYaRu();
 ```
 
 [Наверх](#up)
+
+&#169;	[Яндекс.Практикум](https://praktikum.yandex.ru) &#38; [Добровольская Елена Владимировна](https://github.com/okogora), 2020
 
