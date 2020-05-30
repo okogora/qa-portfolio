@@ -162,7 +162,20 @@
 
 1. Ассоциативная карта
 
-![Mindmap](https://i.ibb.co/C5rtXs1/image.png)
+![Mindmap](https://i.ibb.co/vQ5TqnB/yandex-routes.png)
+
+[Ассоциативная карта в большом разрешении](https://s47sas.storage.yandex.net/rdisk/3dc587fdfad25c9f8320d750e0a280fb8114b86896173ebe8d9b2c98283256ad/5ed27d89/0dbd-FeksPOC7SezXhu72vGLHqN2kE1iYRukpSOoTlIR-NCNYwQr45DJ20ATyuIU1F5E8M8LqFsxPvdnTeoLqg==?uid=0&filename=yandex-routes.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&owner_uid=915950779&media_type=image&etag=15093114a10f303970b9826fa82899af&hid=23a3e0244779547e90777929ce915457&fsize=1119412&rtoken=u1PekZcrTGMg&force_default=no&ycrid=na-a8a1ac87dc0284cd0fc596d89e5a7a78-downloader18e&ts=5a6df5403b440&s=c9013b7bc0c616fdb8ae5ea7e38503f708fd945340f604bfc864a4168e51edd6&pb=U2FsdGVkX1-cYAXCIh4W5W6fCTIR_eHW5Rqag1yaHNvrh5P3nWEIrmZcqxdu7LvrSRXdJ1p9AvFDPZ5xpaeezUyGJMnTYQ6ZcAic9yCmoFo)
+
+2. Классы эквивалентности и граничные значения
+
+Поле ввода часов, длина поля
+
+Название класса |	Тип класса |	Границы |	Тестовые данные внутри класса |
+Тестовые данные на границах |	Пояснение
+:--|:--|:--|:--|:--|:--
+2 цифры |	диапазон |	2	| |	2 цифры: *12* |	*курсивом* выделены повторяющиеся проверки, зачёркнутые значения - оптимизация проверок
+от 0 до 1 цифры |	диапазон |	0, 1 |	0 цифр: пустое поле | 1 цифра: 0	
+от 3 цифр до +∞	| диапазон |	3 |	50 цифр:<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890 |	3 цифры: 222	
 
 [Наверх](#up)
 
