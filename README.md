@@ -1862,7 +1862,7 @@ Firefox 75.0 (64-bit)<br>
 
 <a name="BUG-8299" />
 <details>
-<summary>BUG-8299: </summary>
+<summary>BUG-8299: Одинаковые иконки для каршеринга и своего авто в панели транспорта</summary>
 
 ***
 
