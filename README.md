@@ -162,7 +162,7 @@
 
 1. Ассоциативная карта
 
-![Mindmap](https://i.ibb.co/48KKv5P/yandex-routes.png)
+![Mindmap](https://i.ibb.co/C5rtXs1/image.png)
 
 [Наверх](#up)
 
