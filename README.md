@@ -164,9 +164,9 @@
 
 **1. Ассоциативная карта**
 
-![Mindmap](https://i.ibb.co/vQ5TqnB/yandex-routes.png)
+![Mindmap](https://i.ibb.co/g68hNvH/yandex-routes.png)
 
-[Ассоциативная карта в большом разрешении](https://s47sas.storage.yandex.net/rdisk/3dc587fdfad25c9f8320d750e0a280fb8114b86896173ebe8d9b2c98283256ad/5ed27d89/0dbd-FeksPOC7SezXhu72vGLHqN2kE1iYRukpSOoTlIR-NCNYwQr45DJ20ATyuIU1F5E8M8LqFsxPvdnTeoLqg==?uid=0&filename=yandex-routes.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&owner_uid=915950779&media_type=image&etag=15093114a10f303970b9826fa82899af&hid=23a3e0244779547e90777929ce915457&fsize=1119412&rtoken=u1PekZcrTGMg&force_default=no&ycrid=na-a8a1ac87dc0284cd0fc596d89e5a7a78-downloader18e&ts=5a6df5403b440&s=c9013b7bc0c616fdb8ae5ea7e38503f708fd945340f604bfc864a4168e51edd6&pb=U2FsdGVkX1-cYAXCIh4W5W6fCTIR_eHW5Rqag1yaHNvrh5P3nWEIrmZcqxdu7LvrSRXdJ1p9AvFDPZ5xpaeezUyGJMnTYQ6ZcAic9yCmoFo)
+[Ассоциативная карта в большом разрешении](https://i.ibb.co/8XwtqzT/yandex-routes.png)
 
 **2. Классы эквивалентности и граничные значения**
 
@@ -328,9 +328,9 @@
 
 > Нарисуй блок-схему, которая визуализирует алгоритм выбора скорости транспорта в зависимости от времени начала поездки.
 
-![Блок-схема](https://i.ibb.co/Cwg3Sh7/blockscheme.png)
+![Блок-схема](https://i.ibb.co/LzQxn7m/blockscheme.png)
 
-[Блок-схема в большом разрешении](https://s68vla.storage.yandex.net/rdisk/94dbda2c7be0cca1b3e45daea3f45445cbe56e91f3357ba8c4783c8fe8706cfc/5ed2a983/0dbd-FeksPOC7SezXhu72iFxoljhPntH4bXa_SntR0Wm0JZpMW3Nr4YUPjdOkqLTrqX6PJZJBYhDl3FiuswoSg==?uid=0&filename=blockscheme.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&owner_uid=915950779&fsize=296113&etag=d0f5b303aa0513ac10c27aeb59eecaf7&hid=e55def5bcc6d0f64d3970e98ed4fd653&media_type=image&rtoken=TirdzRLa7i9v&force_default=no&ycrid=na-ba2b5aaf9a1ab7ff31b5198604b6794d-downloader2f&ts=5a6e1f30b26c0&s=30c4ffe894d5bcff623f051e8229de275f2d3be7a6862f01a0ed37b96fc1f21b&pb=U2FsdGVkX187WRNsY-8Ij6zV3fc1bwHshUZFYVNZkkLdoMwjGAoT7OMEYbGI28oymWzyM8_pXq1tEhUSYILChXu5pcT0qvgYk5hIABz7j-I)
+[Блок-схема в большом разрешении](https://i.ibb.co/N619ZB5/blockscheme.png)
 
 В соответствии с требованиями, если поездка захватывает несколько временных интервалов, алгоритм выбирает скорость автомобиля из того диапазона, в котором поездка началась. Так как для алгоритма выбора скорости транспорта время окончания поездки, которое зависит от расстояния между адресами, несущественно, в блок-схему не был добавлен ввод адресов Откуда и Куда, а также расчёт времени и стоимости поездки.
 
