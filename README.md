@@ -328,7 +328,7 @@
 
 > Нарисуй блок-схему, которая визуализирует алгоритм выбора скорости транспорта в зависимости от времени начала поездки.
 
-![Блок-схема](https://i.ibb.co/S0cQVN1/blockscheme.png)
+![Блок-схема](https://i.ibb.co/Cwg3Sh7/blockscheme.png)
 
 [Блок-схема в большом разрешении](https://s68vla.storage.yandex.net/rdisk/94dbda2c7be0cca1b3e45daea3f45445cbe56e91f3357ba8c4783c8fe8706cfc/5ed2a983/0dbd-FeksPOC7SezXhu72iFxoljhPntH4bXa_SntR0Wm0JZpMW3Nr4YUPjdOkqLTrqX6PJZJBYhDl3FiuswoSg==?uid=0&filename=blockscheme.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&owner_uid=915950779&fsize=296113&etag=d0f5b303aa0513ac10c27aeb59eecaf7&hid=e55def5bcc6d0f64d3970e98ed4fd653&media_type=image&rtoken=TirdzRLa7i9v&force_default=no&ycrid=na-ba2b5aaf9a1ab7ff31b5198604b6794d-downloader2f&ts=5a6e1f30b26c0&s=30c4ffe894d5bcff623f051e8229de275f2d3be7a6862f01a0ed37b96fc1f21b&pb=U2FsdGVkX187WRNsY-8Ij6zV3fc1bwHshUZFYVNZkkLdoMwjGAoT7OMEYbGI28oymWzyM8_pXq1tEhUSYILChXu5pcT0qvgYk5hIABz7j-I)
 
