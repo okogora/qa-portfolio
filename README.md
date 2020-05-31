@@ -4653,5 +4653,5 @@ testYaRu();
 
 [Наверх](#up)
 
-&#169;	[Яндекс.Практикум](https://praktikum.yandex.ru) &#38; [Добровольская Елена Владимировна](https://github.com/okogora), 2020
+&#169;	[Яндекс.Практикум](https://praktikum.yandex.ru) &#38; [Елена Добровольская](https://github.com/okogora), 2020
 
